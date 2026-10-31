@@ -180,7 +180,7 @@
   }
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.t-big, .t-huge, .hero-lead').forEach(segmentBreaks);
-    document.querySelectorAll('.t-big, .t-huge, .hero-lead, .text2').forEach(glueLastWords);
+    document.querySelectorAll('.t-big, .t-huge, .hero-lead, .text2, .faq summary > span').forEach(glueLastWords);
   });
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

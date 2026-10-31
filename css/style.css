@@ -6,7 +6,7 @@
 p.t-big{font-size: calc(1.563 * var(--r));color: var(--text2)}
 @media (max-width: 760px){.sec-title,.sec-head h2{font-size: calc(1.563 * var(--r))}p.t-big{font-size: calc(1.25 * var(--r))}}
 /* Toutes les pages : titres « get in touch » et « in detail » discrets, comme le lien « more about the studio » (taille courante, Light, .muted) ; la grande accroche reste */
-#lets-talk .sec-title,#help .sec-title{font-size: var(--r);font-weight: 300;line-height: 1.4;color: var(--grey)}
+.sec-title.sec-label{font-size: var(--r);font-weight: 300;line-height: 1.4;color: var(--grey)}
 /* Accueil : bouton « Ask for a quote » sous le texte du hero, clair sur la vidéo */
 .hero-cta{margin-top: var(--u)}
 .btn-light{background: var(--light);border-color: var(--light);color: var(--ink)}
@@ -23,3 +23,47 @@ p.t-big{font-size: calc(1.563 * var(--r));color: var(--text2)}
 @media (min-width: 761px){.home .logo{height: 88px}}
 /* Téléphone : logos clients plus petits (accueil et page offre) */
 @media (max-width: 760px){.logo img,.home .logo img{zoom: .65}.logo,.logo.indent{height: 52px}}
+/* Audit typo (oct. 2026) */
+/* Hero : texte d'accroche en Regular et dégradé plus dense derrière lui, pour rester lisible sur la vidéo */
+.hero-lead{font-weight: 400}
+.hero-shade{background: linear-gradient(180deg,rgba(24,22,20,0.72) 0%,rgba(24,22,20,0.3) 16%,rgba(24,22,20,0) 30%,rgba(24,22,20,0.3) 50%,rgba(24,22,20,0.82) 100%)}
+@media (max-width: 760px){.hero-shade{background: linear-gradient(180deg,rgba(24,22,20,0.72) 0%,rgba(24,22,20,0.3) 14%,rgba(24,22,20,0) 26%,rgba(24,22,20,0.45) 45%,rgba(24,22,20,0.85) 100%)}}
+/* Téléphone : texte courant en Regular (le Light à 15 px devient trop maigre) ; le Light reste pour les grandes tailles */
+@media (max-width: 760px){body{font-weight: 400}}
+/* Titres de section un palier plus haut, pour se détacher nettement du paragraphe d'intro (.t-big) */
+.sec-title,.sec-head h2{font-size: calc(2.441 * var(--r))}
+@media (max-width: 760px){.sec-title,.sec-head h2{font-size: calc(1.953 * var(--r))}}
+.sec-title.sec-label{font-size: var(--r)}
+/* Page projet : le titre (h1) un cran au-dessus du texte courant */
+h1[data-p="title"]{font-size: calc(1.25 * var(--r));line-height: 1.3}
+/* Grands paragraphes : interligne un peu plus ouvert sur plusieurs lignes */
+.t-big{line-height: 1.3}
+/* Audit typo responsive (oct. 2026) */
+/* Nav desktop : toujours sur une ligne (elle passait « about » à la ligne entre 901 et 1101 px) ; elle peut déborder dans la 3e colonne, libre */
+@media (min-width: 901px){.nav-main{flex-wrap: nowrap}.nav-main > a{white-space: nowrap}}
+/* Nav desktop étroite : écart entre les liens réduit à --u, pour laisser de l'air avant « Get in touch » */
+@media (min-width: 901px) and (max-width: 1200px){.nav-main{column-gap: var(--u)}}
+/* Hero desktop : le dégradé fonce plus tôt derrière le titre (plans clairs de la vidéo) et plus derrière la bande de la nav ; mobile inchangé */
+@media (min-width: 761px){.hero-shade{background: linear-gradient(180deg,rgba(24,22,20,0.8) 0%,rgba(24,22,20,0.62) 9%,rgba(24,22,20,0.25) 17%,rgba(24,22,20,0.08) 26%,rgba(24,22,20,0.45) 42%,rgba(24,22,20,0.82) 100%)}}
+/* Footer de 761 à 1000 px : les 5 blocs sur une ligne n'ont plus la place, retour à 3 colonnes avec le logo sur sa ligne */
+@media (min-width: 761px) and (max-width: 1000px){.footer-grid{display: grid;grid-template-columns: repeat(3,minmax(0,1fr))}.footer-grid>.t-logo{grid-column: 1 / -1}}
+/* Compteur du viewer projet (« 1 / 5 ») : jamais sous 14 px */
+.stepper .t-small{font-size: max(0.875rem,calc(0.875 * var(--r)))}
+/* Espacements (oct. 2026) */
+/* Petit titre (.sec-label : « get in touch », « in detail ») collé à son contenu : écart --h au lieu de --u */
+.grid:has(> .sec-label){row-gap: var(--h)}
+/* Accueil : liens « more about the studio » et « learn more » à --h de leur bloc (l'écart de grille est --u) */
+.grid > a.col-main.muted{margin-top: calc(var(--h) - var(--u))}
+/* Bas de page desktop : moins de vide entre le CTA et le footer (.backtop est masqué sur téléphone) */
+.backtop{padding-bottom: calc(2 * var(--u))}
+/* Services, « in detail » : au-dessus de 1100 px, 5 colonnes égales sur la grille au lieu du flex space-between */
+@media (min-width: 1101px){.svc-lists{display: grid;grid-template-columns: repeat(5,minmax(0,1fr));gap: var(--u)}}
+/* FAQ : retour à la ligne « pretty » plutôt que « balance », qui coupait les questions en deux lignes courtes sur téléphone */
+.faq summary{text-wrap: pretty}
+/* Typo (oct. 2026) */
+/* Texte courant à 16 px minimum sur téléphone (au lieu de 15) : toute l'échelle suit, rien ne change au-dessus de ~1050 px */
+:root{--r: clamp(1rem,0.6125rem + 0.59vw,1.125rem)}
+/* Texte courant en Regular à toutes les largeurs (comme sur téléphone) ; intros, grands titres, nav et questions restent en Light */
+body{font-weight: 400}
+/* Titre du hero et grand titre : interlettrage neutre, l'ouverture de +0,01em desserrait les mots à ces tailles */
+.hero-title,.t-huge{letter-spacing: 0}

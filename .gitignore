@@ -1,0 +1,3 @@
+# Outils locaux (Impeccable, réglages Claude Code) : ne pas publier sur Netlify
+.claude/
+.impeccable/
