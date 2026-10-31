@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project – Flair Studio</title>
+<meta property="og:title" content="Project – Flair Studio">
+<meta property="og:image" content="assets/img/maison-des-pins-1.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/LolliBook-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+<script src="js/tracking.js" async></script>
+<link rel="expect" href="#lets-talk" blocking="render"><!-- la page ne s'affiche qu'une fois le projet construit : la transition depuis la vignette trouve son image -->
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="t-logo" href="index.html"><span class="lg-b">flair</span><span class="lg-l muted">studio</span></a>
+<nav class="nav-main t-label" id="menu" aria-label="Main">
+<a class="hit" href="work.html">projects</a>
+<a class="hit" href="services.html">services</a>
+<a class="hit" href="about.html">about</a>
+<div class="menu-foot mobile-only t-label"><a href="contact.html">Contact us</a><a href="project-fr.html" aria-label="Switch language">EN</a></div>
+</nav>
+<div class="nav-end">
+<a class="t-label hit" href="contact.html">Get in touch</a>
+<a class="t-label hit" href="project-fr.html" aria-label="Switch language">EN</a>
+<button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-close="Close menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="b1" d="M3 8h18"></path><path class="b2" d="M3 16h18"></path></svg></button>
+</div>
+</header>
+<main id="main">
+
+<!-- Contenu rempli par js/project.js à partir de js/projects.js (adresse : project.html?p=identifiant-du-projet) -->
+<section class="wrap project-screen" id="project">
+<a class="back-link mobile-only" href="work.html">Back to projects</a>
+<div class="viewer" data-p="viewer">
+<div class="track" data-p="track"></div>
+</div>
+
+<div class="viewer-bar">
+<div>
+<h1 class="regular" data-p="title"></h1>
+<p class="muted" data-p="client"></p>
+</div>
+<div class="stepper">
+<button type="button" class="arrow" data-p="prevImg" aria-label="Previous image" hidden>
+<svg width="18" height="18" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M9.5 1.5 4 7l5.5 5.5"></path></svg>
+</button>
+<span class="muted t-small" data-p="count"></span>
+<button type="button" class="arrow" data-p="nextImg" aria-label="Next image" hidden>
+<svg width="18" height="18" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M4.5 1.5 10 7l-5.5 5.5"></path></svg>
+</button>
+</div>
+</div>
+
+<nav class="pager" aria-label="Projects">
+<a href="#" data-p="prev">← Previous project</a>
+<a href="#" data-p="next">Next project →</a>
+</nav>
+</section>
+
+<script src="js/projects.js"></script>
+<script src="js/images.js"></script>
+<script src="js/project.js"></script>
+<section class="fx wrap" id="lets-talk">
+<div class="block">
+<div class="grid">
+<h2 class="sec-title t-label">get in touch</h2>
+<div class="col-main">
+<p class="t-huge mb-u">Tell us about your project.</p>
+<p class="t-big">A few lines are enough to book a slot.<br>We can also step in when your usual studio is unavailable.<br>Find us on <a href="https://maps.google.com/?q=Rue+d%27Alost+7,+1000+Bruxelles">Rue d'Alost</a> in Brussels, at <a href="mailto:hello@flairstudio.be">hello@flairstudio.be</a>,<br>or on WhatsApp at <a href="https://wa.me/32492458114">+32 492 45 81 14</a>.</p>
+<p class="mt-2u"><a class="btn" href="quote.html">Ask for a quote</a></p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<div class="wrap">
+<div class="backtop">
+<a href="#top">Top <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5"></path></svg></a>
+</div>
+</div>
+
+<footer class="wrap">
+<div class="footer-grid">
+<span class="t-logo"><span class="lg-b ink">flair</span><span class="lg-l">studio</span></span>
+<span class="stack"><span>Rue d'Alost 7/11</span><span>1000 Brussels, Belgium</span></span>
+<span class="stack"><a href="mailto:hello@flairstudio.be">hello@flairstudio.be</a><a href="https://wa.me/32492458114">WhatsApp +32 492 45 81 14</a></span>
+<span class="stack"><a href="https://be.linkedin.com/company/flair-studio-be">LinkedIn</a><a href="https://www.instagram.com/flairstudio.be/">Instagram</a></span>
+</div>
+</footer>
+</body>
+</html>

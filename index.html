@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flair Studio – Architectural visualization in Brussels</title>
+<meta name="description" content="Renders, films and campaigns for architects and developers in Brussels, true to the design.">
+<meta property="og:title" content="Flair Studio – Architectural visualization in Brussels">
+<meta property="og:image" content="assets/img/maison-des-pins-1.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/LolliBook-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/LolliBook-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+<script src="js/tracking.js" async></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header on-hero">
+<a class="t-logo" href="index.html"><span class="lg-b">flair</span><span class="lg-l dim">studio</span></a>
+<nav class="nav-main t-label" id="menu" aria-label="Main">
+<a class="hit" href="work.html">projects</a>
+<a class="hit" href="services.html">services</a>
+<a class="hit" href="about.html">about</a>
+<div class="menu-foot mobile-only t-label"><a href="contact.html">Contact us</a><a href="fr.html" aria-label="Switch language">EN</a></div>
+</nav>
+<div class="nav-end">
+<a class="t-label hit" href="contact.html">Get in touch</a>
+<a class="t-label hit" href="fr.html" aria-label="Switch language">EN</a>
+<button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-close="Close menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="b1" d="M3 8h18"></path><path class="b2" d="M3 16h18"></path></svg></button>
+</div>
+</header>
+<main id="main" class="home">
+<section class="hero">
+<!-- lancé par js/main.js une fois la page chargée (data-play). Même film partout, en boucle : version 16:9 sur ordinateur (plus de 900 px), version recadrée sur la bande centrale (9:16, 3 fois plus légère) sur téléphone et tablette -->
+<video class="hero-img hero-vid on" data-play muted playsinline preload="none" aria-hidden="true">
+<source src="assets/vid/hero-desktop.mp4" type="video/mp4" media="(min-width: 700px), (orientation: landscape)">
+<source src="assets/vid/hero-mobile.mp4" type="video/mp4">
+</video>
+<script>(function (v) { v.poster = matchMedia('(min-width: 700px), (orientation: landscape)').matches ? 'assets/img/hero-desktop-poster.jpg' : 'assets/img/hero-mobile-poster.jpg'; })(document.currentScript.previousElementSibling);</script>
+<div class="hero-shade" aria-hidden="true"></div>
+
+<div class="hero-bottom fx" data-fx-delay="0.2">
+<div class="hero-text">
+<h1 class="hero-title">Show it<br>with flair</h1>
+<p class="hero-lead">Renders, films and campaigns for architects and developers. We show your project the way you designed it, so it is judged on what it really is.</p>
+<p class="hero-cta"><a class="btn btn-light" href="quote.html">Ask for a quote</a></p>
+</div>
+</div>
+</section>
+
+<section class="fx wrap py-s">
+<div class="grid">
+<p class="sec-title t-label">about us</p>
+<p class="col-main t-big fx-late">We are a design-focused communication agency specialized in architectural visualization.<br>We make images that speak for your project through a personal approach and attention to the smallest detail.</p>
+<a class="col-main self-start muted" href="about.html">more about the studio</a>
+</div>
+</section>
+
+<section class="fx wrap pb-s" id="work">
+<div class="rule pt-u">
+<div class="sec-head">
+<h2 class="t-label">projects</h2>
+<a class="hit muted" href="work.html">all projects</a>
+</div>
+
+<div class="row mb-u">
+<a class="fig card" href="project.html?p=maison-des-pins" style="flex: 1.474 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/maison-des-pins-1.jpg" srcset="assets/img/480/maison-des-pins-1.webp 480w, assets/img/800/maison-des-pins-1.webp 800w, assets/img/1200/maison-des-pins-1.webp 1200w, assets/img/maison-des-pins-1.webp 1700w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 41vw, (max-width: 1600px) 42vw, 742px" alt="Courtyard of a timber-shingled house among pine trees" style="aspect-ratio: 1700/1153">
+<span class="cap"><span class="cap-title">Maison des Pins</span><span class="cap-meta">Atelier Grès</span></span>
+</a>
+<a class="fig card" href="project.html?p=docks" style="flex: 0.728 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/docks-1.jpg" srcset="assets/img/480/docks-1.webp 480w, assets/img/800/docks-1.webp 800w, assets/img/docks-1.webp 1237w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 21vw, (max-width: 1600px) 21vw, 365px" alt="Brick office buildings on a quay seen across the water at dusk" style="aspect-ratio: 1237/1700">
+<span class="cap"><span class="cap-title">Docks</span><span class="cap-meta">Hamburg Team</span></span>
+</a>
+<a class="fig card" href="project.html?p=ulb-auditorium" style="flex: 0.85 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/ulb-auditorium-1.jpg" srcset="assets/img/480/ulb-auditorium-1.webp 480w, assets/img/800/ulb-auditorium-1.webp 800w, assets/img/1200/ulb-auditorium-1.webp 1200w, assets/img/ulb-auditorium-1.webp 1445w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 24vw, (max-width: 1600px) 25vw, 427px" alt="Timber-lined amphitheatre with a speaker and audience" style="aspect-ratio: 1445/1700">
+<span class="cap"><span class="cap-title">ULB Auditorium</span><span class="cap-meta">TANK Architectes</span></span>
+</a>
+</div>
+<div class="row mb-u">
+<a class="fig card" href="project.html?p=chardons" style="flex: 1.7 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/chardons-1.jpg" srcset="assets/img/480/chardons-1.webp 480w, assets/img/800/chardons-1.webp 800w, assets/img/1200/chardons-1.webp 1200w, assets/img/chardons-1.webp 1700w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 32vw, (max-width: 1600px) 33vw, 582px" alt="Two apartment buildings with balconies around a shared garden" style="aspect-ratio: 1700/1000">
+<span class="cap"><span class="cap-title">Chardons</span><span class="cap-meta">A229</span></span>
+</a>
+<a class="fig card" href="project.html?p=tirana-tower" style="flex: 1.5 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/tirana-tower-2.jpg" srcset="assets/img/480/tirana-tower-2.webp 480w, assets/img/800/tirana-tower-2.webp 800w, assets/img/1200/tirana-tower-2.webp 1200w, assets/img/tirana-tower-2.webp 1700w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 29vw, (max-width: 1600px) 30vw, 515px" alt="Covered lobby with a sculptural bench and planting" style="aspect-ratio: 1700/1133">
+<span class="cap"><span class="cap-title">Tirana Tower</span><span class="cap-meta">Taller Héctor Barroso</span></span>
+</a>
+<a class="fig card" href="project.html?p=schweitzer" style="flex: 1.277 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/schweitzer-1.jpg" srcset="assets/img/480/schweitzer-1.webp 480w, assets/img/800/schweitzer-1.webp 800w, assets/img/1200/schweitzer-1.webp 1200w, assets/img/schweitzer-1.webp 1700w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 24vw, (max-width: 1600px) 25vw, 438px" alt="Green brick building inserted into a photograph of a street corner" style="aspect-ratio: 1700/1331">
+<span class="cap"><span class="cap-title">Schweitzer</span><span class="cap-meta">Fallow and UMA Architecten</span></span>
+</a>
+</div>
+<div class="row">
+<a class="fig card" href="project.html?p=jules-cesar" style="flex: 1.5 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/jules-cesar-4.jpg" srcset="assets/img/480/jules-cesar-4.webp 480w, assets/img/800/jules-cesar-4.webp 800w, assets/img/1200/jules-cesar-4.webp 1200w, assets/img/jules-cesar-4.webp 1700w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 43vw, (max-width: 1600px) 45vw, 784px" alt="Bedroom interior with dressing room and garden view" style="aspect-ratio: 3/2">
+<span class="cap"><span class="cap-title">Jules Cesar</span><span class="cap-meta">Sogerim</span></span>
+</a>
+<a class="fig card" href="project.html?p=base-nautique" style="flex: 0.734 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/base-nautique-1.jpg" srcset="assets/img/480/base-nautique-1.webp 480w, assets/img/800/base-nautique-1.webp 800w, assets/img/base-nautique-1.webp 1175w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 21vw, (max-width: 1600px) 22vw, 383px" alt="Timber interior with large windows onto the river" style="aspect-ratio: 1175/1600">
+<span class="cap"><span class="cap-title">Base Nautique</span><span class="cap-meta">Peaks Architectes</span></span>
+</a>
+<a class="fig card" href="project.html?p=lux-46" style="flex: 0.705 1 0">
+<img loading="lazy" decoding="async" class="img" src="assets/img/lux-46-1.jpg" srcset="assets/img/480/lux-46-1.webp 480w, assets/img/800/lux-46-1.webp 800w, assets/img/lux-46-1.webp 1128w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 21vw, (max-width: 1600px) 21vw, 369px" alt="Building with a deep window grid on a Brussels street corner" style="aspect-ratio: 1128/1600">
+<span class="cap"><span class="cap-title">Lux 46</span><span class="cap-meta">A229</span></span>
+</a>
+</div>
+</div>
+</section>
+
+<section class="fx wrap" id="services">
+<div class="block">
+<div class="grid mb-2u">
+<h2 class="sec-title t-label">services</h2>
+<p class="col-main t-big">From the competition to the sales launch,<br>we make the renders, films and pictures your project needs,<br>and bring them into brochures, websites and social media posts.</p>
+</div>
+<div class="grid">
+<div class="col-1" aria-hidden="true"></div>
+<div class="col-main grid3">
+<div>
+<img loading="lazy" decoding="async" class="img r34 mb-h" src="assets/img/jules-cesar-3.jpg" srcset="assets/img/480/jules-cesar-3.webp 480w, assets/img/800/jules-cesar-3.webp 800w, assets/img/1200/jules-cesar-3.webp 1200w, assets/img/jules-cesar-3.webp 1352w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 28vw, (max-width: 1600px) 22vw, 375px" alt="Kitchen and dining area with pendant lights">
+<h3 class="t-label mb-h">Architectural visualization</h3>
+<p class="text2">Renders of interiors and exteriors, from close-up details to aerial views, and photographic insertions that put your project in the real site.</p>
+</div>
+<div>
+<div class="media mb-h">
+<video class="img r34" src="assets/vid/sogerim-film.mp4" poster="assets/img/sogerim-film-poster.jpg" data-autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
+</div>
+<h3 class="t-label mb-h">Film and photography</h3>
+<p class="text2">Animated films that take viewers through projects that aren't built yet, drone sessions that capture the site and its surroundings, and on-site photography of completed buildings.</p>
+</div>
+<div>
+<img loading="lazy" decoding="async" class="img r34 mb-h" src="assets/img/campaign-magazine.jpg" srcset="assets/img/480/campaign-magazine.webp 480w, assets/img/800/campaign-magazine.webp 800w, assets/img/campaign-magazine.webp 1328w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 28vw, (max-width: 1600px) 22vw, 375px" alt="Open magazine with a spread on a timber and stone kitchen interior">
+<h3 class="t-label mb-h">Campaign</h3>
+<p class="text2">Brochures, websites, signage and social media posts for projects going to market, made from the same renders, films and pictures.</p>
+</div>
+</div>
+<a class="col-main self-start mt-2u muted" href="services.html">learn more</a>
+</div>
+
+</div>
+</section>
+
+<section class="fx wrap" id="clients">
+<div class="block grid">
+<h2 class="sec-title t-label">our clients</h2>
+<ul class="logos" aria-label="Clients">
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-a229.png" alt="A229" style="width: 137px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-a2o.png" alt="a2o" style="width: 125px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-ag-real-estate.png" alt="AG Real Estate" style="width: 80px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-archi2000.png" alt="Archi2000" style="width: 162px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-fallow.png" alt="Fallow" style="width: 112px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-kaleo.png" alt="Kaleo" style="width: 91px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-manuelle-gautrand-architecture.png" alt="Manuelle Gautrand Architecture" style="width: 91px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-projekt-kraft.png" alt="Projekt Kraft" style="width: 137px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-rock-architects.png" alt="Rock Architects" style="width: 100px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-sogerim.png" alt="Sogerim" style="width: 116px"></li>
+<li class="logo indent"><img loading="lazy" decoding="async" src="assets/img/logo-taller-hector-barroso.png" alt="Taller Héctor Barroso" style="width: 152px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-tank-architectes.png" alt="TANK Architectes" style="width: 114px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-topotek-1.png" alt="Topotek 1" style="width: 127px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-veld.png" alt="VELD" style="width: 53px"></li>
+</ul>
+</div>
+</section>
+
+<section class="fx wrap" id="lets-talk">
+<div class="block">
+<div class="grid">
+<h2 class="sec-title t-label">get in touch</h2>
+<div class="col-main fx-late">
+<p class="t-huge mb-u">Tell us about your project.</p>
+<p class="t-big">A few lines are enough to book a slot.<br>We can also step in when your usual studio is unavailable.<br>Find us on <a href="https://maps.google.com/?q=Rue+d%27Alost+7,+1000+Bruxelles">Rue d'Alost</a> in Brussels, at <a href="mailto:hello@flairstudio.be">hello@flairstudio.be</a>,<br>or on WhatsApp at <a href="https://wa.me/32492458114">+32 492 45 81 14</a>.</p>
+<p class="mt-2u"><a class="btn" href="quote.html">Ask for a quote</a></p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<div class="wrap">
+<div class="backtop">
+<a href="#top">Top <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5"></path></svg></a>
+</div>
+</div>
+
+<footer class="wrap">
+<div class="footer-grid">
+<span class="t-logo"><span class="lg-b ink">flair</span><span class="lg-l">studio</span></span>
+<span class="stack"><span>Rue d'Alost 7/11</span><span>1000 Brussels, Belgium</span></span>
+<span class="stack"><a href="mailto:hello@flairstudio.be">hello@flairstudio.be</a><a href="https://wa.me/32492458114">WhatsApp +32 492 45 81 14</a></span>
+<span class="stack"><a href="https://be.linkedin.com/company/flair-studio-be">LinkedIn</a><a href="https://www.instagram.com/flairstudio.be/">Instagram</a></span>
+</div>
+</footer>
+</body>
+</html>

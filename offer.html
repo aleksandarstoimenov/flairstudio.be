@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A free first view of your project – Flair Studio</title>
+<meta name="description" content="Send us your plans: get a quote and a first camera view of your project, free, within 48 hours.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="A free first view of your project – Flair Studio">
+<meta property="og:image" content="assets/img/maison-des-pins-1.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/LolliBook-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+<script src="js/tracking.js" async></script>
+<script src="js/quote.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header lp-header">
+<a class="t-logo" href="index.html"><span class="lg-b">flair</span><span class="lg-l muted">studio</span></a>
+<a class="t-label hit lp-cta" href="#request">Send my plans</a>
+</header>
+<main id="main">
+
+<!-- Page d'arrivée de la campagne Instagram (offre : devis + première vue de cadrage offerte sous 48 h).
+     Lien à mettre dans la pub : offer.html?utm_source=instagram&utm_campaign=NOM-DE-LA-CAMPAGNE -->
+<section class="fx wrap page-intro">
+<div class="grid">
+<div class="col-1" aria-hidden="true"></div>
+<div class="col-main">
+<h1 class="t-huge mb-u">Send us your plans. Get a quote and a first camera view, free, within 48 hours.</h1>
+<p class="t-big mb-u">We frame your project the way we would photograph it on site, and you decide if you want to go further.</p>
+<p class="muted mb-2u">One free view per studio, for a real project in progress.</p>
+<a class="btn" href="#request">Send my plans</a>
+</div>
+</div>
+</section>
+
+<section class="fx wrap pb-s">
+<div class="rule pt-u grid">
+<p class="sec-title t-label">recent films</p>
+<div class="col-main grid2">
+<a class="fig card" href="project.html?p=maison-des-pins"><video class="img r45" src="assets/vid/video_001.mp4" poster="assets/img/maison-des-pins-2.jpg" data-autoplay muted loop playsinline preload="none" aria-label="Film of Maison des Pins: the house among the pines"></video><span class="cap"><span class="cap-title">Maison des Pins</span><span class="cap-meta">Atelier Grès</span></span></a>
+<a class="fig card" href="project.html?p=jules-cesar"><video class="img r45" src="assets/vid/video_002.mp4" poster="assets/img/jules-cesar-2.jpg" data-autoplay muted loop playsinline preload="none" aria-label="Film of Jules Cesar: dining table facing the garden"></video><span class="cap"><span class="cap-title">Jules Cesar</span><span class="cap-meta">Sogerim</span></span></a>
+</div>
+</div>
+</section>
+
+<section class="fx wrap pb-s">
+<div class="rule pt-u grid">
+<p class="sec-title t-label">our clients</p>
+<ul class="logos" aria-label="Clients">
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-a229.png" alt="A229" style="width: 137px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-a2o.png" alt="a2o" style="width: 125px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-ag-real-estate.png" alt="AG Real Estate" style="width: 80px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-archi2000.png" alt="Archi2000" style="width: 162px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-fallow.png" alt="Fallow" style="width: 112px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-kaleo.png" alt="Kaleo" style="width: 91px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-manuelle-gautrand-architecture.png" alt="Manuelle Gautrand Architecture" style="width: 91px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-projekt-kraft.png" alt="Projekt Kraft" style="width: 137px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-rock-architects.png" alt="Rock Architects" style="width: 100px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-sogerim.png" alt="Sogerim" style="width: 116px"></li>
+<li class="logo indent"><img loading="lazy" decoding="async" src="assets/img/logo-taller-hector-barroso.png" alt="Taller Héctor Barroso" style="width: 152px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-tank-architectes.png" alt="TANK Architectes" style="width: 114px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-topotek-1.png" alt="Topotek 1" style="width: 127px"></li>
+<li class="logo"><img loading="lazy" decoding="async" src="assets/img/logo-veld.png" alt="VELD" style="width: 53px"></li>
+</ul>
+</div>
+</section>
+
+<section class="fx wrap pb-s" id="request">
+<div class="rule pt-u grid">
+<h2 class="sec-title t-label">your free view</h2>
+<div class="col-main">
+<p class="t-big mb-2u">Send your plans and a few words about the project. You get your quote and a first view within 48 hours.</p>
+<!-- Formulaire reçu par Netlify Forms (onglet Forms du site sur Netlify). Notifications mail : Site configuration > Forms > Form notifications. -->
+<form class="quote-form" name="offer" method="POST" data-netlify="true" netlify-honeypot="_gotcha" data-quote>
+<input type="hidden" name="form-name" value="offer">
+<div class="field"><label for="q-name">Name and company</label><input id="q-name" name="name" autocomplete="organization" required></div>
+<div class="field"><label for="q-email">Email</label><input id="q-email" type="email" name="email" autocomplete="email" required></div>
+<div class="field"><label for="q-phone">Phone <span class="muted">(optional)</span></label><input id="q-phone" type="tel" name="phone" autocomplete="tel"></div>
+<div class="field"><label for="q-stage">Project stage</label><select id="q-stage" name="stage"><option>Design process</option><option>Competition</option><option>Permit</option><option>Sales and marketing</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="q-deadline">Deadline <span class="muted">(optional)</span></label><input id="q-deadline" name="deadline" placeholder="e.g. mid-December"></div>
+<div class="field"><label for="q-files">Link to plans <span class="muted">(optional)</span></label><input id="q-files" type="url" name="files" placeholder="WeTransfer, Drive…"></div>
+<div class="field field-wide"><label for="q-msg">About the project</label><textarea id="q-msg" name="message" rows="4" required placeholder="What it is, where, and how many images or films you have in mind."></textarea></div>
+<input type="hidden" name="source" value="instagram-offer">
+<input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="form-foot field-wide">
+<button type="submit" class="btn">Send request</button>
+<a class="btn btn-ghost" href="https://wa.me/32492458114?text=Hi%20Flair%20Studio%2C%20I%20saw%20your%20Instagram%20offer%20and%20I%27d%20like%20my%20free%20first%20view.">Message us on WhatsApp</a>
+</div>
+<p class="form-status field-wide" role="status" hidden></p>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<div class="wrap">
+<div class="backtop">
+<a href="#top">Top <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5"></path></svg></a>
+</div>
+</div>
+
+<footer class="wrap">
+<div class="footer-grid">
+<span class="t-logo"><span class="lg-b ink">flair</span><span class="lg-l">studio</span></span>
+<span class="stack"><span>Rue d'Alost 7/11</span><span>1000 Brussels, Belgium</span></span>
+<span class="stack"><a href="mailto:hello@flairstudio.be">hello@flairstudio.be</a><a href="https://wa.me/32492458114">WhatsApp +32 492 45 81 14</a></span>
+<span class="stack"><a href="https://be.linkedin.com/company/flair-studio-be">LinkedIn</a><a href="https://www.instagram.com/flairstudio.be/">Instagram</a></span>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demander un devis – Flair Studio</title>
+<meta name="description" content="Demandez un devis à Flair Studio&nbsp;: rendus, films et campagnes pour votre projet.">
+<meta property="og:title" content="Demander un devis – Flair Studio">
+<meta property="og:image" content="assets/img/maison-des-pins-1.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/LolliBook-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+<script src="js/tracking.js" async></script>
+<script src="js/quote.js" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+<a class="t-logo" href="fr.html"><span class="lg-b">flair</span><span class="lg-l muted">studio</span></a>
+<nav class="nav-main t-label" id="menu" aria-label="Navigation principale">
+<a class="hit" href="work-fr.html">projets</a>
+<a class="hit" href="services-fr.html">services</a>
+<a class="hit" href="about-fr.html">à propos</a>
+<div class="menu-foot mobile-only t-label"><a href="contact-fr.html">Nous contacter</a><a href="quote.html" aria-label="Changer de langue">FR</a></div>
+</nav>
+<div class="nav-end">
+<a class="t-label hit" href="contact-fr.html">Parlons-en</a>
+<a class="t-label hit" href="quote.html" aria-label="Changer de langue">FR</a>
+<button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu" data-close="Fermer le menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path class="b1" d="M3 8h18"></path><path class="b2" d="M3 16h18"></path></svg></button>
+</div>
+</header>
+<main id="main">
+
+<section class="fx wrap page-intro" id="quote">
+<div class="grid">
+<h1 class="sec-title t-label">demander un devis</h1>
+<div class="col-main">
+<p class="t-big mb-2u">Parlez-nous un peu du projet. Nous revenons vers vous avec un devis, les vues que nous proposons et une date de livraison.</p>
+<!-- Formulaire reçu par Netlify Forms (onglet Forms du site sur Netlify). Notifications mail : Site configuration > Forms > Form notifications. -->
+<form class="quote-form" name="quote" method="POST" data-netlify="true" netlify-honeypot="_gotcha" data-quote>
+<input type="hidden" name="form-name" value="quote">
+<div class="field"><label for="q-name">Nom et société</label><input id="q-name" name="name" autocomplete="organization" required></div>
+<div class="field"><label for="q-email">E-mail</label><input id="q-email" type="email" name="email" autocomplete="email" required></div>
+<div class="field"><label for="q-phone">Téléphone <span class="muted">(facultatif)</span></label><input id="q-phone" type="tel" name="phone" autocomplete="tel"></div>
+<div class="field"><label for="q-stage">Étape du projet</label><select id="q-stage" name="stage"><option>Conception</option><option>Concours</option><option>Permis</option><option>Vente et commercialisation</option><option>Je ne sais pas encore</option></select></div>
+<div class="field"><label for="q-deadline">Échéance <span class="muted">(facultatif)</span></label><input id="q-deadline" name="deadline" placeholder="p. ex. mi-décembre"></div>
+<div class="field"><label for="q-files">Lien vers les plans <span class="muted">(facultatif)</span></label><input id="q-files" type="url" name="files" placeholder="WeTransfer, Drive…"></div>
+<div class="field field-wide"><label for="q-msg">Le projet</label><textarea id="q-msg" name="message" rows="4" required placeholder="Ce que c'est, où, et combien d'images ou de films vous imaginez."></textarea></div>
+<input type="hidden" name="source" value="website-fr">
+<input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="form-foot field-wide">
+<button type="submit" class="btn">Envoyer la demande</button>
+<a class="btn btn-ghost" href="https://wa.me/32492458114?text=Bonjour%20Flair%20Studio%2C%20je%20souhaiterais%20un%20devis%20pour%20un%20projet.">Nous écrire sur WhatsApp</a>
+</div>
+<p class="form-status field-wide" role="status" hidden></p>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<div class="wrap">
+<div class="backtop">
+<a href="#top">Haut <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5"></path></svg></a>
+</div>
+</div>
+
+<footer class="wrap">
+<div class="footer-grid">
+<span class="t-logo"><span class="lg-b ink">flair</span><span class="lg-l">studio</span></span>
+<span class="stack"><span>Rue d'Alost 7/11</span><span>1000 Bruxelles, Belgique</span></span>
+<span class="stack"><a href="mailto:hello@flairstudio.be">hello@flairstudio.be</a><a href="https://wa.me/32492458114">WhatsApp +32 492 45 81 14</a></span>
+<span class="stack"><a href="https://be.linkedin.com/company/flair-studio-be">LinkedIn</a><a href="https://www.instagram.com/flairstudio.be/">Instagram</a></span>
+</div>
+</footer>
+</body>
+</html>
